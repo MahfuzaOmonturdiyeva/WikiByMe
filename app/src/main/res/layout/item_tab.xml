@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/container_tab"
+    android:elevation="10dp"
+    app:cardCornerRadius="3dp"
+    android:background="@drawable/item_custom">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/image_tab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:adjustViewBounds="true"
+            android:src="@drawable/v" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/text_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>
